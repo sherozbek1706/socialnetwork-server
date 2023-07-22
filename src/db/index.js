@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-
+const config = require("../shared/config");
 module.exports = () =>
   mongoose
-    .connect("mongodb://127.0.0.1/social-network", {
+    .connect(`mongodb://${config.DB.DB_HOST}/${config.DB.DB_NAME}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
