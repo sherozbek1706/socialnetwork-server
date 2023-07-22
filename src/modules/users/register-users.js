@@ -1,9 +1,12 @@
 const Users = require("./Users");
-
+const bcrypt = require("bcrypt");
 
 const registerUsers = async ({ body }) => {
-  console.log(body);
-  const newUser = await Users.create({ ...body });
+  const user = {
+    ...body,
+    password: bcrypt.hashSync(body.password, 10),
+  };
+  const newUser = await Users.create(user);
 
   return newUser;
 };
