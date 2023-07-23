@@ -10,7 +10,13 @@ const postPosts = require("./post-posts");
 
 const post_posts = async (req, res, next) => {
   try {
-    const result = await postPosts({ body: req.body, user_id: req.user.id });
+    console.log(req.body);
+    console.log(req.file);
+    const result = await postPosts({
+      body: req.body,
+      user_id: req.user.id,
+      image: req.file.filename,
+    });
 
     res.status(201).json({
       data: result,
