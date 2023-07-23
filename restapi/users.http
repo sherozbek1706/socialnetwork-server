@@ -3,10 +3,10 @@ POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-  "first_name": "Sherozbek", 
-  "last_name": "Baxtiyorov", 
-  "email": "sherozbek555@gmail.com",
-  "username": "sher",
+  "first_name": "Azamat", 
+  "last_name": "Hakimov", 
+  "email": "Azam@gmail.com",
+  "username": "azamjon",
   "password": "1234"
 }
 
@@ -16,7 +16,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sher",
+  "username": "azamjon",
   "password": "1234"
 }
 

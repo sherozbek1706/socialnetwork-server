@@ -2,6 +2,7 @@ const express = require("express");
 const postPosts = require("./post-posts");
 const getPosts = require("./get-posts");
 const showPosts = require("./show-posts");
+const getUsersPosts = require("./get-users-posts");
 
 /**
  *
@@ -60,8 +61,26 @@ const show_posts = async (req, res, next) => {
   }
 };
 
+/**
+ *
+ * @param {express.Request} req
+ * @param {express.Response} res
+ * @param {express.NextFunction} next
+ */
+
+const get_usersPosts = async (req, res, next) => {
+  try {
+    const result = await getUsersPosts({ param: req.params.id });
+
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   post_posts,
   get_posts,
   show_posts,
+  get_usersPosts,
 };
