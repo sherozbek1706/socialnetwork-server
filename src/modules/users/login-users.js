@@ -2,6 +2,7 @@ const User = require("./Users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const config = require("../../shared/config");
+const { NotFoundError, ForbiddenError } = require("../../shared/errors");
 
 const loginUser = async ({ body }) => {
   const { username, password } = body;
@@ -9,13 +10,13 @@ const loginUser = async ({ body }) => {
   const existed = await User.findOne({ username });
 
   if (!existed) {
-    return "User Not Found: 404";
+    throw new NotFoundError("User Not Found: 404");
   }
 
   const isCorrect = bcrypt.compareSync(password, existed.password);
 
   if (!isCorrect) {
-    return "Password incorrect";
+    throw new ForbiddenError("Password incorrect");
   }
 
   const token = jwt.sign({ id: existed.id }, config.JWT.SECRET, {

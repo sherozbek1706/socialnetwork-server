@@ -7,29 +7,32 @@ const loginUser = require("./login-users");
  * @param {Express.Request} req
  * @param {Express.Response} res
  */
-const register_users = async (req, res) => {
+
+const register_users = async (req, res, next) => {
   try {
     const result = await registerUsers({ body: req.body });
     res.status(201).json({
       data: result,
     });
   } catch (error) {
-    res.json({
-      error,
-    });
+    next(error);
   }
 };
 
-const login_users = async (req, res) => {
+/**
+ *
+ * @param {Express.Request} req
+ * @param {Express.Response} res
+ */
+
+const login_users = async (req, res, next) => {
   try {
     const result = await loginUser({ body: req.body });
     res.status(201).json({
-      "access-token" : result,
+      "access-token": result,
     });
   } catch (error) {
-    res.json({
-      error,
-    });
+    next(error);
   }
 };
 
