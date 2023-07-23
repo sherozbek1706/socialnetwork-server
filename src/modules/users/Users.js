@@ -1,23 +1,21 @@
 const mongoose = require("mongoose");
 
+const reqType = {
+  type: mongoose.SchemaTypes.String,
+  required: true,
+};
 const usersSchema = new mongoose.Schema({
-  first_name: {
-    type: mongoose.SchemaTypes.String,
-    required: true,
-  },
-  last_name: {
-    type: mongoose.SchemaTypes.String,
-    required: true,
-  },
-  username: {
-    type: mongoose.SchemaTypes.String,
-    required: true,
+  first_name: reqType,
+  last_name: reqType,
+  email: {
+    ...reqType,
     unique: true,
   },
-  password: {
-    type: mongoose.SchemaTypes.String,
-    required: true,
+  username: {
+    ...reqType,
+    unique: true,
   },
+  password: reqType,
 });
 
 const Users = mongoose.model("Users", usersSchema);
