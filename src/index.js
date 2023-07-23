@@ -5,6 +5,9 @@ const db = require("./db");
 const config = require("./shared/config");
 const app = express();
 
+// import handleError
+const handleError = require("./shared/errors/handle");
+
 //import route
 const usersRoute = require("./modules/users/_api");
 
@@ -15,6 +18,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use(usersRoute);
+app.use(handleError);
 
 // Database connection
 db();
