@@ -1,5 +1,6 @@
 const express = require("express");
 const postPosts = require("./post-posts");
+const getPosts = require("./get-posts");
 
 /**
  *
@@ -10,8 +11,6 @@ const postPosts = require("./post-posts");
 
 const post_posts = async (req, res, next) => {
   try {
-    console.log(req.body);
-    console.log(req.file);
     const result = await postPosts({
       body: req.body,
       user_id: req.user.id,
@@ -26,6 +25,24 @@ const post_posts = async (req, res, next) => {
   }
 };
 
+/**
+ *
+ * @param {express.Request} req
+ * @param {express.Response} res
+ * @param {express.NextFunction} next
+ */
+
+const get_posts = async (req, res, next) => {
+  try {
+    const result = await getPosts();
+
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   post_posts,
+  get_posts,
 };

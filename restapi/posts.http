@@ -1,6 +1,6 @@
-### REGISTER USER
+### POST POSTS
 POST http://localhost:5000/posts
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiY2ZkNDE5NjFlZmRjOTVjOTRmNzU0In0sImlhdCI6MTY5MDEwNzI4NiwiZXhwIjoxNjkwMTEwODg2fQ.8m3uIg4L0C2T3jwM3wHVSt13eCqbts0IEzw74x7pcjA
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiY2ZkNDE5NjFlZmRjOTVjOTRmNzU0In0sImlhdCI6MTY5MDExMzEzNCwiZXhwIjoxNjkwMTE2NzM0fQ.9hISqBura5L2qGk0fCsLbA_L5bTMV9_iQyhxn3qvW8g
 Content-Type: application/json
 
 {
@@ -9,3 +9,13 @@ Content-Type: application/json
   "image": "sherozbek1111@gmail.com",
   "web_link": "1234"
 }
+
+
+
+
+### POST POSTS
+GET http://localhost:5000/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiY2ZkNDE5NjFlZmRjOTVjOTRmNzU0In0sImlhdCI6MTY5MDExMzEzNCwiZXhwIjoxNjkwMTE2NzM0fQ.9hISqBura5L2qGk0fCsLbA_L5bTMV9_iQyhxn3qvW8g
+Content-Type: application/json
+
+
