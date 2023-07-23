@@ -19,7 +19,7 @@ const loginUser = async ({ body }) => {
     throw new ForbiddenError("Password incorrect");
   }
 
-  const token = jwt.sign({ id: existed.id }, config.JWT.SECRET, {
+  const token = jwt.sign({ user: { id: existed.id } }, config.JWT.SECRET, {
     expiresIn: "1h",
   });
   return token;

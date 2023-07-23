@@ -5,8 +5,8 @@ Content-Type: application/json
 {
   "first_name": "Sherozbek", 
   "last_name": "Baxtiyorov", 
-  "email": "sherozbek1111@gmail.com",
-  "username": "sheroz",
+  "email": "sherozbek555@gmail.com",
+  "username": "sher",
   "password": "1234"
 }
 
@@ -16,7 +16,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sheroz",
+  "username": "sher",
   "password": "1234"
 }
 
@@ -30,15 +30,3 @@ Content-Type: application/json
 
 
 
-
-
-### REGISTER USER
-POST http://localhost:5000/posts
-Content-Type: application/json
-
-{
-  "title": "Sherozbek", 
-  "description": "Baxtiyorov", 
-  "image": "sherozbek1111@gmail.com",
-  "web_link": "1234"
-}

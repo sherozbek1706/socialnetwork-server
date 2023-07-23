@@ -3,12 +3,14 @@ const postPosts = require("./post-posts");
 
 /**
  *
- * @param {Express.Request} req
- * @param {Express.Response} res
+ * @param {express.Request} req
+ * @param {express.Response} res
+ * @param {express.NextFunction} next
  */
+
 const post_posts = async (req, res, next) => {
   try {
-    const result = await postPosts({ body: req.body });
+    const result = await postPosts({ body: req.body, user_id: req.user.id });
 
     res.status(201).json({
       data: result,
