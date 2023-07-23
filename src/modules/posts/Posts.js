@@ -9,7 +9,7 @@ const postsSchemas = new mongoose.Schema({
     type: mongoose.SchemaTypes.ObjectId,
     ref: "Users",
   },
-  webLink: reqType,
+  web_link: reqType,
 });
 
 const Posts = mongoose.model("Posts", postsSchemas);

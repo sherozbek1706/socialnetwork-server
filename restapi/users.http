@@ -19,3 +19,26 @@ Content-Type: application/json
   "username": "sheroz",
   "password": "1234"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+### REGISTER USER
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+  "title": "Sherozbek", 
+  "description": "Baxtiyorov", 
+  "image": "sherozbek1111@gmail.com",
+  "web_link": "1234"
+}
