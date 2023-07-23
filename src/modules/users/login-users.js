@@ -1,5 +1,7 @@
 const User = require("./Users");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const config = require("../../shared/config");
 
 const loginUser = async ({ body }) => {
   const { username, password } = body;
@@ -16,6 +18,9 @@ const loginUser = async ({ body }) => {
     return "Password incorrect";
   }
 
-  return "You are Logged.";
+  const token = jwt.sign({ id: existed.id }, config.JWT.SECRET, {
+    expiresIn: "1h",
+  });
+  return token;
 };
 module.exports = loginUser;

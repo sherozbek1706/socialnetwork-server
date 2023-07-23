@@ -24,7 +24,7 @@ const login_users = async (req, res) => {
   try {
     const result = await loginUser({ body: req.body });
     res.status(201).json({
-      login: result,
+      "access-token" : result,
     });
   } catch (error) {
     res.json({
