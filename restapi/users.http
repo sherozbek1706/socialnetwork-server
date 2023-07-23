@@ -1,9 +1,19 @@
-POST http://localhost:5000/users
+### REGISTER USER
+POST http://localhost:5000/register
 Content-Type: application/json
 
 {
   "first_name": "Sherozbek", 
   "last_name": "Baxtiyorov", 
-  "username": "sherozbe.1",
+  "username": "sherozbek.17",
+  "password": "1234"
+}
+
+### LOGIN USER
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "sherozbek.17",
   "password": "1234"
 }
