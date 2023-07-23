@@ -13,18 +13,15 @@ Content-Type: application/json
 
 ### GET POSTS
 GET http://localhost:5000/posts
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZDIxN2E4OTljODJjZjUwN2YzN2Y0In0sImlhdCI6MTY5MDExNjQ4MywiZXhwIjoxNjkwMTIwMDgzfQ.T1WlWdD3lYqdeG4kOr0bQ_7jqGCU-E_SQu85Lpqt9as
 Content-Type: application/json
 
 
 ### SHOW POSTS
 GET http://localhost:5000/posts/64bd08d8c9847c261b2cf278
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZDIxN2E4OTljODJjZjUwN2YzN2Y0In0sImlhdCI6MTY5MDExNjQ4MywiZXhwIjoxNjkwMTIwMDgzfQ.T1WlWdD3lYqdeG4kOr0bQ_7jqGCU-E_SQu85Lpqt9as
 Content-Type: application/json
 
 
 ### GET USERS POSTS
 GET http://localhost:5000/posts/users/64bd217a899c82cf507f37f4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZDIxN2E4OTljODJjZjUwN2YzN2Y0In0sImlhdCI6MTY5MDExNjQ4MywiZXhwIjoxNjkwMTIwMDgzfQ.T1WlWdD3lYqdeG4kOr0bQ_7jqGCU-E_SQu85Lpqt9as
 Content-Type: application/json
 

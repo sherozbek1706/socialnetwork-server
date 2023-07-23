@@ -9,9 +9,9 @@ const {
 } = require("./_controller");
 
 const mPostPosts = [isLoggedIn, uploadImage];
-const mGetPosts = [isLoggedIn];
-const mShowPosts = [isLoggedIn];
-const mUsersPosts = [isLoggedIn];
+const mGetPosts = [];
+const mShowPosts = [];
+const mUsersPosts = [];
 
 router.post("/posts", mPostPosts, post_posts);
 router.get("/posts", mGetPosts, get_posts);
