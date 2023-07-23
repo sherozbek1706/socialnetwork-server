@@ -12,6 +12,6 @@ const postsSchemas = new mongoose.Schema({
   webLink: reqType,
 });
 
-const Posts = mongoose.Model("Posts", postsSchemas);
+const Posts = mongoose.model("Posts", postsSchemas);
 
 module.exports = Posts;
