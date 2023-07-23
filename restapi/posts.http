@@ -11,11 +11,14 @@ Content-Type: application/json
 }
 
 
-
-
-### POST POSTS
+### GET POSTS
 GET http://localhost:5000/posts
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiY2ZkNDE5NjFlZmRjOTVjOTRmNzU0In0sImlhdCI6MTY5MDExMzEzNCwiZXhwIjoxNjkwMTE2NzM0fQ.9hISqBura5L2qGk0fCsLbA_L5bTMV9_iQyhxn3qvW8g
 Content-Type: application/json
 
+
+### SHOW POSTS
+GET http://localhost:5000/posts/64bd08d8c9847c261b2cf278
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiY2ZkNDE5NjFlZmRjOTVjOTRmNzU0In0sImlhdCI6MTY5MDExMzEzNCwiZXhwIjoxNjkwMTE2NzM0fQ.9hISqBura5L2qGk0fCsLbA_L5bTMV9_iQyhxn3qvW8g
+Content-Type: application/json
 
