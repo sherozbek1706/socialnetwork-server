@@ -1,7 +1,8 @@
 const express = require("express");
 const registerUsers = require("./register-users");
 const loginUser = require("./login-users");
-
+const httpValidator = require("../../shared/http-validator");
+const { RegisterUserSchema, LoginUserSchema } = require("./_schemas");
 /**
  *
  * @param {Express.Request} req
@@ -10,6 +11,7 @@ const loginUser = require("./login-users");
 
 const register_users = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, RegisterUserSchema);
     const result = await registerUsers({ body: req.body });
     res.status(201).json({
       data: result,
@@ -27,6 +29,7 @@ const register_users = async (req, res, next) => {
 
 const login_users = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, LoginUserSchema);
     const result = await loginUser({ body: req.body });
     res.status(201).json({
       "access-token": result,

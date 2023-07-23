@@ -10,11 +10,12 @@ Content-Type: application/json
   "password": "1234"
 }
 
+
 ### LOGIN USER
 POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sherozbek.17",
+  "username": "sheroz",
   "password": "1234"
 }
