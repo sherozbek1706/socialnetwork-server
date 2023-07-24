@@ -13,9 +13,12 @@ const LikeUsersPosts = async ({ param, user_id }) => {
     like: existed.like + 1,
   };
 
+  await Posts.findByIdAndUpdate({ _id: param }, updatedLikePost);
+
   const updatedPost = await Posts.findByIdAndUpdate(
     { _id: param },
-    updatedLikePost
+    { $push: { likedUsers: user_id } },
+    { new: true }
   );
 
   return updatedPost;

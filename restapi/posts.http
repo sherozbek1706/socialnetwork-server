@@ -17,17 +17,17 @@ Content-Type: application/json
 
 
 ### SHOW POSTS
-GET http://localhost:5000/posts/64bd08d8c9847c261b2cf278
+GET http://localhost:5000/posts/64be07ddd20c9bc5f8b4c67c
 Content-Type: application/json
 
 
 ### GET USERS POSTS
-GET http://localhost:5000/posts/users/64bd217a899c82cf507f37f4
+GET http://localhost:5000/posts/users/64be07ddd20c9bc5f8b4c67c
 Content-Type: application/json
 
 
 
 ### USERS LIKE POSTS
-PUT http://localhost:5000/users/like/posts/64bd08d8c9847c261b2cf278
+PUT http://localhost:5000/users/like/posts/64be07ddd20c9bc5f8b4c67c
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZDIxN2E4OTljODJjZjUwN2YzN2Y0In0sImlhdCI6MTY5MDE3MzA1OCwiZXhwIjoxNjkwMTc2NjU4fQ.K4MT0o4HV4RCoSt5fuRbIoe4aTwbejmgDir4lWJ7Ok4
 Content-Type: application/json
