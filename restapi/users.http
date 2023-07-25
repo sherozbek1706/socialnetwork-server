@@ -5,8 +5,8 @@ Content-Type: application/json
 {
   "first_name": "Sherozbek", 
   "last_name": "Baxtiyorov", 
-  "email": "baxtiyorovsherozbek1111@gmail.com",
-  "username": "sher1",
+  "email": "baxtiyorovshedrozbek1111@gmail.com",
+  "username": "sherozbek.d17",
   "password": "1234"
 }
 
@@ -16,7 +16,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sher1",
+  "username": "sherozbek.17",
   "password": "1234"
 }
 

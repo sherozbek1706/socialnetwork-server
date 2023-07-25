@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const path = require("path");
 const db = require("./db");
 const config = require("./shared/config");
 const app = express();
@@ -12,6 +13,8 @@ const handleError = require("./shared/errors/handle");
 const usersRoute = require("./modules/users/_api");
 const postsRoute = require("./modules/posts/_api");
 
+console.log(__dirname);
+app.use("/files", express.static(path.join(__dirname, "public")));
 // dotenv configures
 dotenv.config();
 
