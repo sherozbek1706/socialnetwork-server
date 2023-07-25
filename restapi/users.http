@@ -3,11 +3,11 @@ POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-  "first_name": "Azamat", 
-  "last_name": "Hakimov", 
-  "email": "Azsam@gmail.com",
-  "username": "sherozbek",
-  "password": "555"
+  "first_name": "Sherozbek", 
+  "last_name": "Baxtiyorov", 
+  "email": "sheroz2019baxti1@gmail.com",
+  "username": "sherozbek1111",
+  "password": "000"
 }
 
 
@@ -16,8 +16,18 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sherozbek",
-  "password": "555"
+  "username": "sherozbek111",
+  "password": "000"
+}
+
+
+
+### FORGOT Password USER
+POST http://localhost:5000/forgot/password
+Content-Type: application/json
+
+{
+  "email": "sheroz2019baxti@gmail.com"
 }
 
 
