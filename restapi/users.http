@@ -5,9 +5,9 @@ Content-Type: application/json
 {
   "first_name": "Sherozbek", 
   "last_name": "Baxtiyorov", 
-  "email": "sheroz2019baxti1@gmail.com",
-  "username": "sherozbek1111",
-  "password": "000"
+  "email": "baxtiyorovsherozbek1111@gmail.com",
+  "username": "sher1",
+  "password": "1234"
 }
 
 
@@ -16,19 +16,19 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "sherozbek111",
-  "password": "000"
+  "username": "sher1",
+  "password": "1234"
 }
 
 
 
-### FORGOT Password USER
-POST http://localhost:5000/forgot/password
-Content-Type: application/json
+# ### FORGOT Password USER
+# POST http://localhost:5000/forgot/password
+# Content-Type: application/json
 
-{
-  "email": "sheroz2019baxti@gmail.com"
-}
+# {
+#   "email": "sheroz2019baxti@gmail.com"
+# }
 
 
 

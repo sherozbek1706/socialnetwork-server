@@ -1,6 +1,6 @@
 ### POST POSTS
 POST http://localhost:5000/posts
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZDIxN2E4OTljODJjZjUwN2YzN2Y0In0sImlhdCI6MTY5MDE3NjcwNSwiZXhwIjoxNjkwMTgwMzA1fQ.Yh-NZDIFnosto_7FP3jcfnAwF2oQJQgLspuhYVzbG2E
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjk1YTc0YjJlZWI2NDM5ZDRiNDlhIn0sImlhdCI6MTY5MDI3NzI5OSwiZXhwIjoxNjkwMjgwODk5fQ.HS9aJcD4RzdJH3F7NJ3Xbbw2wocxPO_KQ3Tn1HzIAC0
 Content-Type: application/json
 
 {
@@ -28,6 +28,6 @@ Content-Type: application/json
 
 
 ### USERS LIKE POSTS
-PUT http://localhost:5000/users/like/posts/64be07ddd20c9bc5f8b4c67c
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZTExYWIzMTg0OGQ0YzUyYzBkMjU0In0sImlhdCI6MTY5MDE3Nzk2NiwiZXhwIjoxNjkwMTgxNTY2fQ.UZo6MaJnIXR2xv8M2rxMQGkLAK0MdP64Ri9bD-iy4GQ
+PUT http://localhost:5000/users/like/posts/64bf964b4b2eeb6439d4b49d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjk1YTc0YjJlZWI2NDM5ZDRiNDlhIn0sImlhdCI6MTY5MDI3NzI5OSwiZXhwIjoxNjkwMjgwODk5fQ.HS9aJcD4RzdJH3F7NJ3Xbbw2wocxPO_KQ3Tn1HzIAC0
 Content-Type: application/json
