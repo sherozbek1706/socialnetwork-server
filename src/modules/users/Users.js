@@ -11,6 +11,14 @@ const usersSchema = new mongoose.Schema({
     ...reqType,
     unique: true,
   },
+  isAdmin: {
+    type: mongoose.SchemaTypes.Boolean,
+    default: false,
+  },
+  haveStar: {
+    type: mongoose.SchemaTypes.Boolean,
+    default: false,
+  },
   username: {
     ...reqType,
     unique: true,
