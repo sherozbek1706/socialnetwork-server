@@ -38,7 +38,7 @@ const post_posts = async (req, res, next) => {
 
 const get_posts = async (req, res, next) => {
   try {
-    const result = await getPosts();
+    const result = await getPosts({ param: req.query });
 
     res.status(200).json({ data: result });
   } catch (error) {
