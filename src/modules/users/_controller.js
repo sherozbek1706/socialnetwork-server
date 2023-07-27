@@ -33,7 +33,7 @@ const login_users = async (req, res, next) => {
     httpValidator({ body: req.body }, LoginUserSchema);
     const result = await loginUser({ body: req.body });
     res.status(201).json({
-      "access-token": result,
+      "token": result,
     });
   } catch (error) {
     next(error);
