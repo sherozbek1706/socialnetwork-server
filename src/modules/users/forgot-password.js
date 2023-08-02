@@ -4,7 +4,6 @@ const config = require("../../shared/config");
 const { NotFoundError, ForbiddenError } = require("../../shared/errors");
 
 const ForgotPasswordUser = async ({ body }) => {
-  console.log(body);
   const { email } = body;
 
   const existed = await User.findOne({ email: email });

@@ -1,7 +1,6 @@
 const Posts = require("./Posts");
 
 const getPosts = async ({ param }) => {
-  console.log(param);
   const { limit = 5, offset = 0 } = param;
   const posts = await Posts.find()
     .populate([
@@ -9,9 +8,9 @@ const getPosts = async ({ param }) => {
         path: "user_id",
         select: "first_name last_name username haveStar",
       },
-      {
-        path: "likedUsers",
-      },
+      // {
+      //   path: "likedUsers",
+      // },
     ])
     .sort({ created_at: "desc" })
     .skip(offset)

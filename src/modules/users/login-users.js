@@ -22,6 +22,7 @@ const loginUser = async ({ body }) => {
   const token = jwt.sign({ user: { id: existed.id } }, config.JWT.SECRET, {
     expiresIn: "1h",
   });
-  return token;
+
+  return { token, id: existed.id };
 };
 module.exports = loginUser;

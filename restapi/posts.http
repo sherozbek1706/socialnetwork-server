@@ -28,6 +28,6 @@ Content-Type: application/json
 
 
 ### USERS LIKE POSTS
-PUT http://localhost:5000/users/like/posts/64bf964b4b2eeb6439d4b49d
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFkIn0sImlhdCI6MTY5MDM3MTg0NywiZXhwIjoxNjkwMzc1NDQ3fQ.4NV-Lu9GXtIKeO9KMPNY0K93hyIBei-79PB9c-HG-1k
+PUT http://localhost:5000/users/like/posts/64bfb9db84340ef215364181
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFhIn0sImlhdCI6MTY5MDc5MDA3OCwiZXhwIjoxNjkwNzkzNjc4fQ.Gl751Q1_tr-17tQwCqch4UcIuZIROF7n29WsOzQ47_w
 Content-Type: application/json
