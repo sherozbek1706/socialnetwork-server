@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 const db = require("./db");
+const ip = require("ip");
 const config = require("./shared/config");
 const app = express();
 
@@ -33,4 +34,5 @@ db();
 
 app.listen(config.PORT, () => {
   console.log(`SERVER HAS BEEN STARTED ON PORT ${config.PORT}.`);
+  console.log(`SERVER HAS BEEN STARTED ON IP ${ip.address()}:${config.PORT}`);
 });
