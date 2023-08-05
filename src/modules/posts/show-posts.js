@@ -17,7 +17,13 @@ const showPosts = async ({ param }) => {
     throw new NotFoundError("Post Not Found 404");
   }
 
-  return existed;
+  const post = await Posts.findByIdAndUpdate(
+    { _id: param },
+    { view: existed.view + 1 },
+    { new: true }
+  );
+
+  return post;
 };
 
 module.exports = showPosts;
