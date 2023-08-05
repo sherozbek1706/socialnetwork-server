@@ -15,6 +15,10 @@ const postsSchemas = new mongoose.Schema(
       type: mongoose.SchemaTypes.Number,
       default: 0,
     },
+    view: {
+      type: mongoose.SchemaTypes.Number,
+      default: 0,
+    },
     likedUsers: {
       type: [mongoose.SchemaTypes.ObjectId],
       ref: "Users",

@@ -15,10 +15,6 @@ const usersSchema = new mongoose.Schema({
     type: mongoose.SchemaTypes.Boolean,
     default: false,
   },
-  view: {
-    type: mongoose.SchemaTypes.Number,
-    default: 0,
-  },
   haveStar: {
     type: mongoose.SchemaTypes.Boolean,
     default: false,
