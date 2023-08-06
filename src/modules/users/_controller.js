@@ -5,6 +5,7 @@ const getUsers = require("./get-users");
 const httpValidator = require("../../shared/http-validator");
 const { RegisterUserSchema, LoginUserSchema } = require("./_schemas");
 const ForgotPasswordUser = require("./forgot-password");
+const showUsers = require("./show-users");
 /**
  *
  * @param {Express.Request} req
@@ -60,9 +61,25 @@ const get_users = async (req, res, next) => {
   }
 };
 
+const show_users = async (req, res, next) => {
+  try {
+    let result;
+    if (req.params.id == "me") {
+      result = await showUsers({ params: req.user });
+    } else {
+      result = await showUsers({ params: req.params });
+    }
+
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register_users,
   login_users,
   // forgot_passwordUsers,
   get_users,
+  show_users,
 };

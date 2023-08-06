@@ -35,8 +35,14 @@ Content-Type: application/json
 ### GET USERS
 GET http://localhost:5000/users
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFkIn0sImlhdCI6MTY5MTMxODAxNywiZXhwIjoxNjkxMzIxNjE3fQ.hL6JqgzSRbt9VscIahc21FDzZnb-eCbonSW2mY05S-M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFkIn0sImlhdCI6MTY5MTMyMTc0NiwiZXhwIjoxNjkxMzI1MzQ2fQ.QM5aGHbJzE9Ks6QsZhZY7yyjbpWmIvoK-COD-q2Ne1w
 
+
+
+### GET ONE USERS
+GET http://localhost:5000/users/353523
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFkIn0sImlhdCI6MTY5MTMyMTc0NiwiZXhwIjoxNjkxMzI1MzQ2fQ.QM5aGHbJzE9Ks6QsZhZY7yyjbpWmIvoK-COD-q2Ne1w
 
 
 
