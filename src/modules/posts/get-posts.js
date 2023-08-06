@@ -6,7 +6,7 @@ const getPosts = async ({ param }) => {
     .populate([
       {
         path: "user_id",
-        select: "first_name last_name username haveStar",
+        select: "first_name last_name username haveStar image",
       },
       // {
       //   path: "likedUsers",
