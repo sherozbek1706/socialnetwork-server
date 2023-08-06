@@ -18,7 +18,7 @@ const post_posts = async (req, res, next) => {
     const result = await postPosts({
       body: req.body,
       user_id: req.user.id,
-      image: req.file.filename,
+      image: `files/post/${req.file.filename}`,
     });
 
     res.status(201).json({
