@@ -2,7 +2,7 @@ const Users = require("./Users");
 const bcrypt = require("bcrypt");
 const { BadRequestError } = require("../../shared/errors");
 
-const registerUsers = async ({ body }) => {
+const registerUsers = async ({ body, image }) => {
   const existedUsername = await Users.findOne({ username: body.username });
 
   if (existedUsername) {
@@ -21,6 +21,7 @@ const registerUsers = async ({ body }) => {
 
   const user = {
     ...body,
+    image,
     password: bcrypt.hashSync(body.password, 10),
   };
   const newUser = await Users.create(user);

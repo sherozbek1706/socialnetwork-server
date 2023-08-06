@@ -15,7 +15,11 @@ const showUsers = require("./show-users");
 const register_users = async (req, res, next) => {
   try {
     httpValidator({ body: req.body }, RegisterUserSchema);
-    const result = await registerUsers({ body: req.body });
+
+    const result = await registerUsers({
+      body: req.body,
+      image: `files/user/${req.file.filename}`,
+    });
     res.status(201).json({
       data: result,
     });

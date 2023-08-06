@@ -11,6 +11,7 @@ const usersSchema = new mongoose.Schema({
     ...reqType,
     unique: true,
   },
+  image: reqType,
   isAdmin: {
     type: mongoose.SchemaTypes.Boolean,
     default: false,
