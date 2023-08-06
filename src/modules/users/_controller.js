@@ -1,6 +1,7 @@
 const express = require("express");
 const registerUsers = require("./register-users");
 const loginUser = require("./login-users");
+const getUsers = require("./get-users");
 const httpValidator = require("../../shared/http-validator");
 const { RegisterUserSchema, LoginUserSchema } = require("./_schemas");
 const ForgotPasswordUser = require("./forgot-password");
@@ -49,8 +50,19 @@ const login_users = async (req, res, next) => {
 //   }
 // };
 
+const get_users = async (req, res, next) => {
+  try {
+    const result = await getUsers();
+
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register_users,
   login_users,
   // forgot_passwordUsers,
+  get_users,
 };
