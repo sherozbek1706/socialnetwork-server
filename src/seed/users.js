@@ -1,5 +1,4 @@
-// const User = require("../modules/users/Users");
-
+const bcrypt = require("bcrypt");
 const data = [
   {
     first_name: "Sherozbek",
@@ -9,17 +8,9 @@ const data = [
     image: "files/user/myPhoto.jpg",
     haveStar: true,
     username: "sherozbek.17",
-    password: "1234",
+    password: bcrypt.hashSync("1234", 10),
   },
 ];
-
-// const seedUsers = async () => {
-//   await User.insertMany(...data);
-
-//   return "Added 2 users.";
-// };
-
-// seedUsers();
 
 const mongoose = require("mongoose");
 const User = require("../modules/users/Users");
