@@ -20,7 +20,7 @@ const loginUser = async ({ body }) => {
   }
 
   const token = jwt.sign({ user: { id: existed.id } }, config.JWT.SECRET, {
-    expiresIn: "1h",
+    expiresIn: "10d",
   });
 
   return { token, id: existed.id };
