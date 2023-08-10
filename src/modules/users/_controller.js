@@ -6,6 +6,7 @@ const httpValidator = require("../../shared/http-validator");
 const { RegisterUserSchema, LoginUserSchema } = require("./_schemas");
 const ForgotPasswordUser = require("./forgot-password");
 const showUsers = require("./show-users");
+const ResetPasswordUsers = require("./reset-password");
 /**
  *
  * @param {Express.Request} req
@@ -44,16 +45,27 @@ const login_users = async (req, res, next) => {
   }
 };
 
-// const forgot_passwordUsers = async (req, res, next) => {
-//   try {
-//     const result = await ForgotPasswordUser({ body: req.body });
-//     res.status(201).json({
-//       data: result,
-//     });
-//   } catch (error) {
-//     next(error);
-//   }
-// };
+const forgot_passwordUsers = async (req, res, next) => {
+  try {
+    const result = await ForgotPasswordUser({ body: req.body });
+    res.status(201).json({
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+const reset_passwordUsers = async (req, res, next) => {
+  try {
+    const result = await ResetPasswordUsers({ params: req.params });
+    res.status(201).json({
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 const get_users = async (req, res, next) => {
   try {
@@ -83,7 +95,8 @@ const show_users = async (req, res, next) => {
 module.exports = {
   register_users,
   login_users,
-  // forgot_passwordUsers,
+  forgot_passwordUsers,
+  reset_passwordUsers,
   get_users,
   show_users,
 };

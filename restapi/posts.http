@@ -22,9 +22,9 @@ Content-Type: application/json
 
 
 ### GET USERS POSTS
-GET http://localhost:5000/posts/users/64be07ddd20c9bc5f8b4c67c
+GET http://localhost:5000/posts/users/64cfa1963114f299a1031ff0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZmExOTYzMTE0ZjI5OWExMDMxZmYwIn0sImlhdCI6MTY5MTU5NTQ1NCwiZXhwIjoxNjkyNDU5NDU0fQ.EjQEQG-KrhHhlvmDvQZGupNXmth9m3yKPNjHRy1V2EA
 Content-Type: application/json
-
 
 
 ### USERS LIKE POSTS

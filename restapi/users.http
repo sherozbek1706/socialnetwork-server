@@ -3,10 +3,10 @@ POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-  "first_name": "Sherozbek", 
-  "last_name": "Baxtiyorov", 
-  "email": "baxtiyorovshedrozbek1111@gmail.com",
-  "username": "sherozbek.d17",
+  "first_name": "Muhammadamin", 
+  "last_name": "Jo'rayev", 
+  "email": "muhammadaminjon2023@gmail.com",
+  "username": "",
   "password": "1234"
 }
 
@@ -16,27 +16,26 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "komil11.00",
+  "username": "sherozbek.17",
   "password": "1234"
 }
 
 
 
-# ### FORGOT Password USER
-# POST http://localhost:5000/forgot/password
-# Content-Type: application/json
+### FORGOT Password USER
+POST http://localhost:5000/forgot/password
+Content-Type: application/json
 
-# {
-#   "email": "sheroz2019baxti@gmail.com"
-# }
+{
+  "email": "muhammadaminjon2023@gmail.com"
+}
 
 
 
 ### GET USERS
 GET http://localhost:5000/users
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZjljNjY3YTA1MGUxMjJkY2VmODFkIn0sImlhdCI6MTY5MTMyMTc0NiwiZXhwIjoxNjkxMzI1MzQ2fQ.QM5aGHbJzE9Ks6QsZhZY7yyjbpWmIvoK-COD-q2Ne1w
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZmExOTYzMTE0ZjI5OWExMDMxZmYwIn0sImlhdCI6MTY5MTU5NTQ1NCwiZXhwIjoxNjkyNDU5NDU0fQ.EjQEQG-KrhHhlvmDvQZGupNXmth9m3yKPNjHRy1V2EA
 
 
 ### GET ONE USERS
